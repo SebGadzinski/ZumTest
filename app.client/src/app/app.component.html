@@ -2,6 +2,26 @@
   <h1 class="title">Pokémon Tournament</h1>
   <p class="subtitle">Click the button below to start the tournament!</p>
 
+  <div class="filters">
+    <div class="filter-group">
+      <label for="sortBy">Sort By:</label>
+      <select id="sortBy" [(ngModel)]="sortBy">
+        <option value="wins">Wins</option>
+        <option value="losses">Losses</option>
+        <option value="ties">Ties</option>
+        <option value="name">Name</option>
+        <option value="id">ID</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="sortDirection">Sort Direction:</label>
+      <select id="sortDirection" [(ngModel)]="sortDirection">
+        <option value="asc">Ascending</option>
+        <option value="desc">Descending</option>
+      </select>
+    </div>
+  </div>
+
   <button class="start-button"
           (click)="startTournament()"
           [disabled]="isLoading">

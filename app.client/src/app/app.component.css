@@ -1,84 +1,103 @@
 .tournament-container {
-  max-width: 800px;
-  margin: 2rem auto;
   text-align: center;
-  font-family: 'Arial', sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  font-family: Arial, sans-serif;
   color: #333;
 }
 
 .title {
-  font-size: 2.5rem;
-  color: #4CAF50;
-  margin-bottom: 0.5rem;
+  color: #4caf50;
+  font-size: 2.5em;
+  margin-bottom: 10px;
 }
 
 .subtitle {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-  color: #777;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filter-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+select {
+  padding: 5px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .start-button {
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  color: #fff;
-  background-color: #4CAF50;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1em;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease;
 }
 
-  .start-button:hover {
-    background-color: #45a049;
-    transform: translateY(-2px);
-  }
+.start-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
 
-  .start-button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-  }
+.start-button:hover:not(:disabled) {
+  background-color: #45a049;
+}
 
 .results-container {
-  margin-top: 2rem;
+  margin-top: 30px;
 }
 
 .results-title {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: #4CAF50;
+  font-size: 1.5em;
+  margin-bottom: 15px;
 }
 
 .results-table {
   width: 100%;
   border-collapse: collapse;
-  margin: 0 auto;
 }
 
-  .results-table th,
-  .results-table td {
-    border: 1px solid #ddd;
-    padding: 0.8rem;
-    text-align: center;
-  }
+.results-table th,
+.results-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
 
-  .results-table th {
-    background-color: #f4f4f4;
-    color: #333;
-    font-weight: bold;
-  }
+.results-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
 
-  .results-table tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
+.results-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
 
-  .results-table tr:hover {
-    background-color: #f1f1f1;
-  }
+.results-table tr:hover {
+  background-color: #f1f1f1;
+}
 
 .no-results {
-  font-size: 1.1rem;
+  font-size: 1.2em;
   color: #888;
-  margin-top: 1rem;
+  margin-top: 20px;
 }
