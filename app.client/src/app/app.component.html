@@ -1,0 +1,40 @@
+<div class="tournament-container">
+  <h1 class="title">Pokémon Tournament</h1>
+  <p class="subtitle">Click the button below to start the tournament!</p>
+
+  <button class="start-button"
+          (click)="startTournament()"
+          [disabled]="isLoading">
+    {{ isLoading ? 'Loading...' : 'Start Tournament' }}
+  </button>
+
+  <div class="results-container" *ngIf="results.length > 0">
+    <h2 class="results-title">Tournament Results</h2>
+    <table class="results-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Type</th>
+          <th>Wins</th>
+          <th>Losses</th>
+          <th>Ties</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let result of results">
+          <td>{{ result.id }}</td>
+          <td>{{ result.name }}</td>
+          <td>{{ result.type }}</td>
+          <td>{{ result.wins }}</td>
+          <td>{{ result.losses }}</td>
+          <td>{{ result.ties }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="no-results" *ngIf="!isLoading && results.length === 0">
+    No results to display. Start a tournament to see the rankings.
+  </p>
+</div>

@@ -1,0 +1,6 @@
+/App.Server/bin/
+/App.Server/obj/
+/App.Server/bin/**
+/App.Server/obj/**
+
+wipeCommits.bat

@@ -1,0 +1,84 @@
+.tournament-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #4CAF50;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #777;
+}
+
+.start-button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+  .start-button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+  }
+
+  .start-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+.results-container {
+  margin-top: 2rem;
+}
+
+.results-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #4CAF50;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+  .results-table th,
+  .results-table td {
+    border: 1px solid #ddd;
+    padding: 0.8rem;
+    text-align: center;
+  }
+
+  .results-table th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .results-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  .results-table tr:hover {
+    background-color: #f1f1f1;
+  }
+
+.no-results {
+  font-size: 1.1rem;
+  color: #888;
+  margin-top: 1rem;
+}

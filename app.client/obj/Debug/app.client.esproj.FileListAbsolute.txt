@@ -1,0 +1,2 @@
+C:\Users\sebas\Source\Repos\ZumTech\App\app.client\obj\Debug\app.client.esproj.CoreCompileInputs.cache
+C:\Users\sebas\Source\Repos\Testing\ZumTest\app.client\obj\Debug\app.client.esproj.CoreCompileInputs.cache
