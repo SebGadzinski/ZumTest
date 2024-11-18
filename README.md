@@ -21,5 +21,5 @@ This is a full-stack application with a frontend Angular project and a backend A
 2. Go to folder path containing two projects
 3. CMD: cd App.Server
 4. CMD: dotnet build
-    - This will build the dot net C# ASP API project and install the npm packages for the front end.
+    - This will build the dot net C# ASP.NET API project and install the npm packages for the front end.
 6. CMD: dotnet run
