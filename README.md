@@ -3,7 +3,7 @@
 This is a full-stack application with a frontend Angular project and a backend ASP.NET Core project.
 
 ## Requirments
-    NodeJS
+    NodeJS - Version >= 18.19
     dotnet
     Angular CLI
         - CMD: npm install -g @angular/cli
@@ -22,4 +22,7 @@ This is a full-stack application with a frontend Angular project and a backend A
 3. CMD: cd App.Server
 4. CMD: dotnet build
     - This will build the dot net C# ASP.NET API project and install the npm packages for the front end.
-6. CMD: dotnet run
+    - --ignore-failed-sources if you have private nuget sources not accessible via the terminal
+5. CMD: dotnet dev-certs https --trust
+    - Only if you do not have a local cert
+7. CMD: dotnet run
