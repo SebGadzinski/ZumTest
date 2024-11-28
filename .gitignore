@@ -4,3 +4,5 @@
 /App.Server/obj/**
 
 wipeCommits.bat
+
+.vs/**
